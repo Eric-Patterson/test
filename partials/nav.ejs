@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+        <li>
+            <% if(!currentUser){ %> 
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <% }else{ %> 
+            <a href="/logout"> Logout </a>
+            <% }%>
+        </li>
+    </ul>
+</nav>

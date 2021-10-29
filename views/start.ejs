@@ -1,0 +1,35 @@
+ <%layout('../layouts/boilerplate') %>
+
+ <% maze = ["/right/first", "/right/second", "/right/third"];
+ let randomItem = maze[Math.floor(Math.random() * maze.length)];%>
+
+<% function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+} %>
+<h1>Hello <%= capitalizeFirstLetter(username) %>, welcome to the typing test arena! Good luck and have fun</h1>
+<p>How fast you can type</p>
+<p><span id="minutes">00</span>:<span id="seconds">00</span></p>
+<textarea name="" id="passage" cols="60" rows="10"></textarea>
+<p id="log"></p>
+<!-- <textarea name="" id="" cols="30" rows="10">
+  Suddenly quite near him there was a rifle shot. He heard the crack and smack and whistling ricochet among the rocks behind him. He dropped his torch and began feebly to trot.
+</textarea> -->
+
+ <!-- right is dangerous but short, left is long but safe -->
+ <!-- <form method="post" action="/left/first">
+     <label for="name">Left</label>
+     <input type="submit" value="Submit">
+   </form> -->
+ <!-- <form method="post" action="<= randomItem >"> -->
+ <!-- <form method="post" action="/right/first">
+     <label for="name">Right</label>
+     <input type="submit" value="Submit">
+   </form> -->
+ 
+   <button id="something">something</button>
+
+<script src="/javascripts/maze.js"></script>
+
+<!-- <a href="route-a/first">Take a Left turn</a>
+<a href="route-b/first">Take a Right turn</a> -->
+<!-- <script src="/javascripts/maze.js"></script> -->
